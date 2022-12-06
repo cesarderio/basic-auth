@@ -31,7 +31,6 @@
     "sqlite3": "^5.1.2",
     "supertest": "^6.3.2"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cesarderio/basic-auth.git"

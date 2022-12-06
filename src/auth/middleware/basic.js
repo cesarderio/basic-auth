@@ -2,7 +2,7 @@
 
 const bcrypt = require('bcrypt');
 const base64 = require('base-64');
-const {Users} = require('../models/index');
+const { Users } = require('../models/index');
 
 async function basicAuth(req, res, next) {
   let { authorization } = req.headers;
