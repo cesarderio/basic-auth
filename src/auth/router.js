@@ -1,6 +1,5 @@
 'use strict';
 
-// require('dotenv').config();
 const express = require('express');
 const bcrypt = require('bcrypt');
 const router = express.Router();
@@ -17,7 +16,6 @@ router.post('/signup', async (req, res, next) => {
       password: encryptedPassword,
     });
     res.status(200).send(record);
-  // } catch (e) { res.status(403).send('Error Creating User'); }
   } catch (e) {
     next('Error Creating User', e);
   }

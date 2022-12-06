@@ -1,7 +1,6 @@
 'use strict';
 
 let { start } = require('./src/server');
-
 let { sequelizeDatabase } = require('./src/auth/models/index');
 
 sequelizeDatabase.sync()
