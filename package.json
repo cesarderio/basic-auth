@@ -6,10 +6,10 @@
   "scripts": {
     "start": "node app.js",
     "watch": "nodemon app.js",
-    "db:config": "sequelize init:config",
-    "db:create": "sequelize db:create",
+    "test": "NODE_ENV=test jest --verbose --coverage",
     "test-watch": "NODE_ENV=test jest --verbose --coverage --watchAll",
-    "test": "NODE_ENV=test jest --verbose --coverage"
+    "db:config": "sequelize init:config",
+    "db:create": "sequelize db:create"
   },
   "jest": {
     "testEnvironment": "node"
@@ -30,5 +30,14 @@
     "sequelize-cli": "^6.5.2",
     "sqlite3": "^5.1.2",
     "supertest": "^6.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarderio/basic-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cesarderio/basic-auth/issues"
+  },
+  "homepage": "https://github.com/cesarderio/basic-auth#readme"
 }
