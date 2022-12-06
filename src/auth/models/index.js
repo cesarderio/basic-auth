@@ -2,7 +2,6 @@
 
 require('dotenv').config();
 const { Sequelize, DataTypes } = require('sequelize');
-
 const usersModel = require('./users-model');
 
 const DATABASE_URL = process.env.NODE_ENV === 'test'
