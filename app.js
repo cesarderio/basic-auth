@@ -1,13 +1,13 @@
-'use strict';
+// 'use strict';
 
-let { start, sequelizeDb } = require('./src/server');
+// let { start, sequelizeDb } = require('./src/server');
 
-sequelizeDb.sync()
-  .then(() => {
-    console.log('Server up');
-    start();
-  })
-  .catch((e) => console.error(e));
+// sequelizeDb.sync()
+//   .then(() => {
+//     console.log('Server up');
+//     start();
+//   })
+//   .catch((e) => console.error(e));
 
 
 
